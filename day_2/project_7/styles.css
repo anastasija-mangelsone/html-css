@@ -1,0 +1,51 @@
+* {
+  /* Padding and border are added outside of the width and height, 
+  increasing the total size of the element.
+  box-sizing: content-box; */
+
+  /* The width and height of the element include the padding and border */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f5f6f7;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* Main axis */
+  justify-content: center;
+  /* Cross axis */
+  align-items: center;
+  padding: 20px 10px;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Creates an element that is the last child of the selected element */
+.gallery::after {
+  content: "";
+  width: 350px;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 32px;
+  background: #0a0a23;
+  color: #fff;
+  border-bottom: 4px solid #fdb347;
+}
