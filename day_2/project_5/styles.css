@@ -1,0 +1,98 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #161f30;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin: 0.75em auto;
+}
+
+p {
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  background-color: #217373;
+  color: black;
+  text-align: center;
+  border-radius: 50px;
+  padding: 0 20px;
+  box-shadow: 10px 10px black;
+}
+
+h1,
+h2 {
+  font-size: 36px;
+}
+
+p,
+label,
+legend {
+  font-size: 18px;
+}
+
+h2 {
+  margin: 0;
+}
+
+label {
+  margin: 15px 0;
+}
+
+input,
+select,
+textarea {
+  background-color: #161f30;
+  color: white;
+}
+
+#main-info label {
+  display: block;
+}
+
+textarea {
+  width: 80%;
+  height: 75px;
+  margin-top: 20px;
+}
+
+fieldset {
+  margin: 0 0 20px 0;
+  border: none;
+  padding: 0;
+}
+
+legend {
+  margin: 0 0 20px 0;
+}
+
+#submit {
+  font-size: 16px;
+}
+
+#name-label {
+  margin-top: 0;
+}
+
+#links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+a {
+  color: white;
+  font-size: 16px;
+}
+
+.left-border {
+  border-left: 1px solid white;
+  padding-left: 4px;
+}

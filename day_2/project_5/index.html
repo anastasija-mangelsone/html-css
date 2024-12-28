@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      The card below was built as a sample survey form for freeCodeCamp.
+    </p>
+    <form action="#" id="survey-form" method="post">
+      <h2>Join the Togepi Fan Club!</h2>
+      <p>
+        Enter your information here to receive updates about club activities,
+        our monthly newsletter, and other email communications.
+      </p>
+      <fieldset id="main-info">
+        <label for="name" id="name-label">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="e.g. John Smith"
+          required
+        />
+
+        <label for="email" id="email-label">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="e.g. john.smith@gmail.com"
+          required
+        />
+
+        <label for="number" id="number-label">Age <em>(optional)</em>:</label>
+        <input
+          type="number"
+          id="number"
+          name="number"
+          placeholder="e.g. 19"
+          min="1"
+          max="150"
+        />
+
+        <label for="dropdown">What are you most interested in?</label>
+        <select name="dropdown" id="dropdown">
+          <option style="display: none"></option>
+          <option value="1">Battling</option>
+          <option value="2">Breeding</option>
+          <option value="3">Completing my Pokedex</option>
+          <option value="4">Exploring new regions</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Who is your favourite Pokemon?</legend>
+        <label for="togepi">
+          <input type="radio" name="pokemon" id="togepi" value="togepi" />
+          Togepi!
+        </label>
+        <label for="pikachu">
+          <input type="radio" name="pokemon" id="pikachu" value="pikachu" />
+          Pikachu
+        </label>
+        <label for="other">
+          <input type="radio" name="pokemon" id="other" value="other" />
+          Other
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Which communications do you want to receive?</legend>
+        <label for="newsletter">
+          <input
+            type="checkbox"
+            name="communications"
+            id="newsletter"
+            value="newsletter"
+          />
+          Newsletter
+        </label>
+        <label for="event-updates">
+          <input
+            type="checkbox"
+            name="communications"
+            id="event-updates"
+            value="event-updates"
+          />
+          Event updates
+        </label>
+        <label for="club-updates">
+          <input
+            type="checkbox"
+            name="communications"
+            id="club-updates"
+            value="club-updates"
+          />
+          Club updates
+        </label>
+      </fieldset>
+      <label for="other-info"
+        >Any other information you would like to share?</label
+      >
+      <textarea name="other-info" id="other-info" rows="3" cols="30">
+You can provide comments, suggestions, or feedback here.</textarea
+      >
+
+      <p>
+        <em
+          >Please note: This form is a proof of concept. Submitting the form
+          will not actually transmit your data.</em
+        >
+      </p>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+    <div id="links">
+      <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
+        >Return to Project List</a
+      >
+      <a class="left-border" href="https://www.nhcarrigan.com/"
+        >Return to HomePage</a
+      >
+    </div>
+  </body>
+</html>
