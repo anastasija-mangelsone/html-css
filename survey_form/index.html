@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form for Cat Owners</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Basic&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="title">Survey Form for Cat Owners</h1>
+    <p id="description">
+      This form is for cat owners to provide information about their cats and
+      their preferences. Please fill out the form to join our mailing list.
+    </p>
+    <form action="#" id="survey-form" method="post">
+      <div class="left"></div>
+      <div class="right">
+        <h2>Yay, we love cats!</h2>
+        <p>
+          Give us the basics about you and your cat(s) so we can send you the
+          most relevant information.
+        </p>
+        <fieldset id="main-info">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="e.g. John Smith"
+            required
+          />
+
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="e.g. john.smith@gmail.com"
+            required
+          />
+
+          <label for="number" id="number-label">Age <em>(optional)</em>:</label>
+          <input
+            type="number"
+            id="number"
+            name="number"
+            placeholder="e.g. 19"
+            min="1"
+            max="150"
+          />
+
+          <label for="dropdown">
+            What are you most interested in doing with your cat(s)?
+          </label>
+          <select name="dropdown" id="dropdown">
+            <option style="display: none"></option>
+            <option value="1">Playing</option>
+            <option value="2">Cuddling</option>
+            <option value="3">Training</option>
+            <option value="4">Other</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>How many cats do you own?</legend>
+          <label for="one">
+            <input type="radio" name="cats" id="one" value="one" />
+            One
+          </label>
+          <label for="two">
+            <input type="radio" name="cats" id="two" value="two" />
+            Two
+          </label>
+          <label for="more">
+            <input type="radio" name="cats" id="more" value="more" />
+            Three
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Which communications do you want to receive?</legend>
+          <label for="newsletter">
+            <input
+              type="checkbox"
+              name="communications"
+              id="newsletter"
+              value="newsletter"
+            />
+            Newsletter
+          </label>
+          <label for="event-updates">
+            <input
+              type="checkbox"
+              name="communications"
+              id="event-updates"
+              value="event-updates"
+            />
+            Event updates
+          </label>
+          <label for="club-updates">
+            <input
+              type="checkbox"
+              name="communications"
+              id="club-updates"
+              value="club-updates"
+            />
+            Club updates
+          </label>
+        </fieldset>
+        <label for="other-info"
+          >Any other information you would like to share?</label
+        >
+        <textarea name="other-info" id="other-info" rows="3" cols="30">
+You can provide comments, suggestions, or feedback here.</textarea
+        >
+
+        <p>
+          <em
+            >Please note: This form is a proof of concept. Submitting the form
+            will not actually transmit your data.</em
+          >
+        </p>
+        <input id="submit" type="submit" value="Submit" />
+      </div>
+    </form>
+    <div id="links">
+      <a href="https://github.com/anastasija-mangelsone/html-css"
+        >Link to GitHub</a
+      >
+      <a
+        class="left-border"
+        href="https://www.behance.net/gallery/62932019/Pawtastic-UI-Kit-for-Adobe-XD"
+        >Inspired by this project</a
+      >
+    </div>
+  </body>
+</html>
